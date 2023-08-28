@@ -83,6 +83,8 @@
 		        
 					<a class="weixin" target="_blank" href="/img/WeChatQRCode.jpg" title="weixin"><i class="icon-weixin"></i></a>
 		        
+					<a class="mail" target="_blank" href="mailto:yuzewuchina@gmail.com" title="mail"><i class="icon-mail"></i></a>
+		        
 			</div>
 		</nav>
 	</header>		
@@ -119,6 +121,8 @@
 						<a class="github" target="_blank" href="https://github.com/Woowuo" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weixin" target="_blank" href="/img/WeChatQRCode.jpg" title="weixin"><i class="icon-weixin"></i></a>
+			        
+						<a class="mail" target="_blank" href="mailto:yuzewuchina@gmail.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -263,7 +267,7 @@
 <nav id="article-nav">
   
   
-    <a href="/2023/06/13/HowtoBuildTHis/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/06/13/HowtoBuildThis/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">How to Build This</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -284,24 +288,66 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
 
 
+
+<style>
+    /* 适配yilia主题 */
+    #valine {
+      padding: 0 30px;
+    }
+    #valine .vwrap{
+      border: 1px solid #c8c8c8;
+    }
+    #valine .vwrap .vheader input,#valine .vcard{
+      border-bottom: 1px dashed #c8c8c8;
+    }
+    #valine .vwrap button,#valine .vmore{
+      background: #c8c8c8;
+    }
+    @media screen and (max-width: 800px) {
+      #valine{
+        padding: 0 10px;
+      }
+    }
+  </style>
+  <div id="valine"></div>
+  <script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+  <script>
+    new Valine({
+      el: '#valine',
+      appId: 'J1bM9aEOuOstWbrXNx0BxrTR-MdYXbMMI',
+      appKey: 'dlkEip2dCD6DLdNH3QBXaEpB',
+      placeholder: 'Just Go Go.',
+      avatar: 'mp',
+      pageSize: '10',
+      lang: 'en',
+      highlight: 'true' === 'true',
+      recordIp: 'false' === 'true',
+      enableQQ: 'false' === 'true',
+      serverURLs: 'https://j1bm9aeo.api.lncldglobal.com'
+    });
+    document.getElementById('veditor').maxLength='500';
+  </script>
+
   
   
-  
-  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-<script>
-  var cloudTieConfig = {
-    url: "http://example.com/2023/08/28/BFS/", 
-    sourceId: "BFS",
-    productKey: "true",
-    target: "cloud-tie-wrapper"
-  };
-</script>
-<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
   
@@ -309,6 +355,7 @@
   
 
   
+
 
 
           </div>
@@ -339,7 +386,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -479,8 +526,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">邮箱：yuzewuchina@gmail.com</div>
   	  	
     	</section>
     
